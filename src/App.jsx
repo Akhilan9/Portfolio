@@ -393,7 +393,7 @@ export default function App() {
                 </svg>
             </div>
 
-            <main className="bg-[#e8e6df] text-black min-h-screen overflow-hidden">
+            <main className="bg-[#e8e6df] text-black min-h-screen">
                 {/* NAVBAR */}
                 <nav className="fixed top-0 left-0 w-full z-50 bg-[#e8e6df]/90 backdrop-blur-md border-b border-black/10">
                     <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
@@ -578,7 +578,7 @@ export default function App() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-5xl font-black uppercase mb-20 tracking-tight scroll-mt-32 text-white"
+                            className="text-4xl sm:text-5xl font-black uppercase mb-20 tracking-tight scroll-mt-32 text-white"
                         >
                             Projects
                         </motion.h2>
@@ -634,15 +634,15 @@ export default function App() {
                     <div className="grid lg:grid-cols-2 gap-20">
                         <div>
                             <div className="flex items-center gap-4 mb-12">
-                                <FaGraduationCap size={40} />
-                                <h2 className="text-5xl font-black uppercase tracking-tight">Education</h2>
+                                <FaGraduationCap size={32} className="md:w-10 md:h-10" />
+                                <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight">Education</h2>
                             </div>
                             <div className="space-y-12">
                                 {education.map((edu, index) => (
                                     <div key={index} className="border-l-4 border-black pl-8 relative">
                                         <div className="absolute w-4 h-4 bg-black rounded-full -left-[10px] top-2"></div>
-                                        <h3 className="text-2xl font-bold uppercase">{edu.school}</h3>
-                                        <p className="text-lg font-medium opacity-60 mb-2">{edu.degree} | {edu.location}</p>
+                                        <h3 className="text-xl sm:text-2xl font-bold uppercase break-words">{edu.school}</h3>
+                                        <p className="text-base sm:text-lg font-medium opacity-60 mb-2">{edu.degree} | {edu.location}</p>
                                         <div className="flex justify-between items-center">
                                             <span className="bg-black text-white px-4 py-1 rounded-full text-sm font-bold uppercase">{edu.duration}</span>
                                             <span className="text-xl font-black">{edu.stats}</span>
@@ -654,8 +654,8 @@ export default function App() {
 
                         <div>
                             <div className="flex items-center gap-6 mb-12">
-                                <FaShieldAlt size={48} className="text-black" />
-                                <h2 className="text-5xl font-black uppercase tracking-tight">Cyber Experience</h2>
+                                <FaShieldAlt size={32} className="md:w-12 md:h-12" />
+                                <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight">Cyber Experience</h2>
                             </div>
                             <div className="space-y-8 text-xl leading-relaxed opacity-80">
                                 <div className="p-8 bg-black/5 rounded-[30px] border border-black/5">
@@ -693,14 +693,14 @@ export default function App() {
                             {/* LEFT: ACHIEVEMENTS */}
                             <div>
                                 <div className="flex items-center gap-6 mb-12">
-                                    <FaTrophy size={48} className="text-white" />
-                                    <h2 className="text-5xl font-black uppercase tracking-tight text-white">Achievements</h2>
+                                    <FaTrophy size={32} className="text-white md:w-12 md:h-12" />
+                                    <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">Achievements</h2>
                                 </div>
                                 <div className="grid gap-6">
                                     {achievements.map((ach, i) => (
-                                        <div key={i} className="flex items-center gap-6 p-8 bg-white/5 rounded-[30px] border border-white/10 hover:bg-white hover:text-black transition-all duration-500 hover-target">
-                                            <div className="w-4 h-4 bg-white rounded-full"></div>
-                                            <p className="text-xl font-bold uppercase tracking-tight">{ach}</p>
+                                        <div key={i} className="flex items-center gap-6 p-6 sm:p-8 bg-white/5 rounded-[30px] border border-white/10 hover:bg-white hover:text-black transition-all duration-500 hover-target">
+                                            <div className="w-3 h-3 bg-white rounded-full shrink-0"></div>
+                                            <p className="text-lg sm:text-xl font-bold uppercase tracking-tight break-words">{ach}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -709,8 +709,8 @@ export default function App() {
                             {/* RIGHT: TECHNICAL ACTIVITIES */}
                             <div>
                                 <div className="flex items-center gap-6 mb-12">
-                                    <FaLaptopCode size={48} className="text-white" />
-                                    <h2 className="text-5xl font-black uppercase tracking-tight text-white">Activities</h2>
+                                    <FaLaptopCode size={32} className="text-white md:w-12 md:h-12" />
+                                    <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">Activities</h2>
                                 </div>
                                 <div className="p-10 bg-white/5 rounded-[40px] border border-white/10">
                                     <ul className="space-y-6 text-xl opacity-80 list-disc pl-8 font-medium">
@@ -735,8 +735,8 @@ export default function App() {
                     className="py-16 px-8 max-w-7xl mx-auto border-t border-black/10 mt-10"
                 >
                     <div className="flex items-center gap-6 mb-16">
-                        <FaAward size={64} className="text-black" />
-                        <h2 className="text-6xl font-black uppercase tracking-tight">Certificates</h2>
+                        <FaAward size={48} className="text-black md:w-16 md:h-16" />
+                        <h2 className="text-3xl sm:text-6xl font-black uppercase tracking-tight">Certificates</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         {certificates.map((cert, index) => (
@@ -824,15 +824,18 @@ export default function App() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="px-8 max-w-7xl mx-auto"
                     >
-                        <motion.h2
-                            id="skills"
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-4xl md:text-5xl font-black uppercase mb-20 tracking-tight scroll-mt-32 text-white"
-                        >
-                            Tech Stack
-                        </motion.h2>
+                        <div className="flex items-center gap-6 mb-20">
+                            <FaTerminal size={48} className="text-white md:w-16 md:h-16" />
+                            <motion.h2
+                                id="skills"
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="text-3xl sm:text-5xl font-black uppercase tracking-tight scroll-mt-32 text-white"
+                            >
+                                Tech Stack
+                            </motion.h2>
+                        </div>
 
                         <motion.div
                             variants={containerVariants}
