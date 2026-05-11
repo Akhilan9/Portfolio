@@ -1026,8 +1026,8 @@ export default function App() {
 
             {/* SCROLL TO TOP BUTTON WITH PROGRESS */}
             {showScrollTop && (
-                <div className="fixed bottom-10 right-10 z-[100] flex items-center justify-center">
-                    <svg className="w-16 h-16 transform -rotate-90 mix-blend-difference">
+                <div className="fixed bottom-10 right-10 z-[100] flex items-center justify-center mix-blend-difference">
+                    <svg className="w-16 h-16 transform -rotate-90">
                         <circle
                             cx="32"
                             cy="32"
@@ -1053,9 +1053,9 @@ export default function App() {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.5 }}
                         onClick={scrollToTop}
-                        className="absolute w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:scale-125 transition-all duration-300 hover-target"
+                        className="absolute w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-125 transition-all duration-300 hover-target"
                     >
-                        <HiOutlineArrowUp size={24} />
+                        <HiOutlineArrowUp size={24} className="text-black" />
                     </motion.button>
                 </div>
             )}
