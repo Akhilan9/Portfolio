@@ -385,8 +385,8 @@ export default function App() {
             <Cursor />
             
             {/* NOISE GRAIN OVERLAY */}
-            <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.03] mix-blend-overlay">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.03] mix-blend-overlay w-full h-full">
+                <svg className="w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <filter id="noise">
                         <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
                     </filter>
@@ -458,7 +458,7 @@ export default function App() {
                             animate="visible"
                             className="flex-1 text-center lg:text-left"
                         >
-                            <h1 className="text-[12vw] lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase text-black lg:whitespace-nowrap">
+                            <h1 className="text-[10vw] sm:text-[12vw] lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase text-black lg:whitespace-nowrap break-words">
                                 {"AKHILAN".split("").map((letter, i) => (
                                     <motion.span 
                                         key={i} 
@@ -505,14 +505,14 @@ export default function App() {
                             className="space-y-24 flex flex-col items-center text-center"
                         >
                             <div className="group text-center">
-                                <h3 className="text-6xl md:text-8xl font-black tracking-tighter group-hover:text-black transition-colors">9.05</h3>
+                                <h3 className="text-5xl sm:text-8xl font-black tracking-tighter group-hover:text-black transition-colors">9.05</h3>
                                 <p className="text-xl font-bold uppercase tracking-widest text-black/40 mt-2">
                                     Current CGPA
                                 </p>
                             </div>
 
                             <div className="group text-center">
-                                <h3 className="text-6xl md:text-8xl font-black tracking-tighter group-hover:text-black transition-colors">1st</h3>
+                                <h3 className="text-5xl sm:text-8xl font-black tracking-tighter group-hover:text-black transition-colors">1st</h3>
                                 <p className="text-xl font-bold uppercase tracking-widest text-black/40 mt-2">
                                     Prize Winner - Cybersecurity CTF
                                 </p>
@@ -752,7 +752,7 @@ export default function App() {
                                 <p className="text-gray-500 text-lg leading-relaxed mb-10 font-medium">
                                     {cert.desc}
                                 </p>
-                                <h3 className="text-3xl font-black uppercase tracking-tight mb-2">{cert.name}</h3>
+                                <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight mb-2 break-words leading-tight">{cert.name}</h3>
                                 <p className="text-gray-400 font-bold uppercase tracking-widest text-sm mb-8">{cert.issuer}</p>
                                 <a 
                                     href={cert.link} 
