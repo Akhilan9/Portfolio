@@ -1027,7 +1027,7 @@ export default function App() {
             {/* SCROLL TO TOP BUTTON WITH PROGRESS */}
             {showScrollTop && (
                 <div className="fixed bottom-10 right-10 z-[100] flex items-center justify-center">
-                    <svg className="w-16 h-16 transform -rotate-90">
+                    <svg className="w-16 h-16 transform -rotate-90 mix-blend-difference">
                         <circle
                             cx="32"
                             cy="32"
@@ -1035,7 +1035,7 @@ export default function App() {
                             stroke="currentColor"
                             strokeWidth="2"
                             fill="transparent"
-                            className="text-black/10"
+                            className="text-white/10"
                         />
                         <motion.circle
                             cx="32"
@@ -1044,7 +1044,7 @@ export default function App() {
                             stroke="currentColor"
                             strokeWidth="2"
                             fill="transparent"
-                            className="text-black"
+                            className="text-white"
                             style={{ pathLength: scrollYProgress }}
                         />
                     </svg>
