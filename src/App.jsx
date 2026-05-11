@@ -457,7 +457,7 @@ export default function App() {
                             animate="visible"
                             className="flex-1 text-center lg:text-left"
                         >
-                            <h1 className="text-[15vw] lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase text-black">
+                            <h1 className="text-[12vw] lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase text-black lg:whitespace-nowrap">
                                 {"AKHILAN".split("").map((letter, i) => (
                                     <motion.span 
                                         key={i} 
@@ -503,15 +503,15 @@ export default function App() {
                             viewport={{ once: true }}
                             className="space-y-24 flex flex-col items-center text-center"
                         >
-                            <div className="group">
-                                <h3 className="text-8xl font-black tracking-tighter group-hover:text-black transition-colors">9.05</h3>
+                            <div className="group text-center">
+                                <h3 className="text-6xl md:text-8xl font-black tracking-tighter group-hover:text-black transition-colors">9.05</h3>
                                 <p className="text-xl font-bold uppercase tracking-widest text-black/40 mt-2">
                                     Current CGPA
                                 </p>
                             </div>
 
-                            <div className="group">
-                                <h3 className="text-8xl font-black tracking-tighter group-hover:text-black transition-colors">1st</h3>
+                            <div className="group text-center">
+                                <h3 className="text-6xl md:text-8xl font-black tracking-tighter group-hover:text-black transition-colors">1st</h3>
                                 <p className="text-xl font-bold uppercase tracking-widest text-black/40 mt-2">
                                     Prize Winner - Cybersecurity CTF
                                 </p>
@@ -1012,7 +1012,7 @@ export default function App() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             href="mailto:akhilanvengala9@gmail.com"
-                            className="text-[18vw] lg:text-[240px] font-black uppercase tracking-tighter leading-none hover:scale-105 transition-transform duration-700 hover-target inline-block text-white"
+                            className="text-[15vw] lg:text-[240px] font-black uppercase tracking-tighter leading-none hover:scale-105 transition-transform duration-700 hover-target inline-block text-white"
                         >
                             HIRE ME!
                         </motion.a>
