@@ -62,7 +62,8 @@ import {
     FaEnvelope,
     FaUser,
     FaShieldAlt,
-    FaAward
+    FaAward,
+    FaTerminal
 } from "react-icons/fa";
 
 import { HiOutlineArrowUp } from "react-icons/hi";
