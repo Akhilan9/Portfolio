@@ -63,7 +63,8 @@ import {
     FaUser,
     FaShieldAlt,
     FaAward,
-    FaTerminal
+    FaTerminal,
+    FaCode
 } from "react-icons/fa";
 
 import { HiOutlineArrowUp } from "react-icons/hi";
@@ -574,15 +575,18 @@ export default function App() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="px-8 max-w-7xl mx-auto"
                     >
-                        <motion.h2 
-                            id="projects"
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="text-4xl sm:text-5xl font-black uppercase mb-20 tracking-tight scroll-mt-32 text-white"
-                        >
-                            Projects
-                        </motion.h2>
+                        <div className="flex items-center gap-6 mb-20">
+                            <FaCode size={48} className="text-white md:w-16 md:h-16" />
+                            <motion.h2 
+                                id="projects"
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="text-4xl sm:text-5xl font-black uppercase tracking-tight scroll-mt-32 text-white"
+                            >
+                                Projects
+                            </motion.h2>
+                        </div>
 
                         <motion.div 
                             variants={containerVariants}
@@ -826,7 +830,7 @@ export default function App() {
                         className="px-8 max-w-7xl mx-auto"
                     >
                         <div className="flex items-center gap-6 mb-20">
-                            <FaMicrochip size={48} className="text-white md:w-16 md:h-16" />
+                            <FaLaptopCode size={48} className="text-white md:w-16 md:h-16" />
                             <motion.h2
                                 id="skills"
                                 initial={{ opacity: 0, y: 30 }}
