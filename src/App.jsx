@@ -11,6 +11,11 @@ import aiSeminarImg from "./assets/ai_seminar.jpg";
 import outreachImg from "./assets/outreach.jpg";
 import cyberHackathonImg from "./assets/cyber_hackathon.jpg";
 
+import nptelLogo from "./assets/nptel_logo.png";
+import scalerLogo from "./assets/scaler_logo.png";
+import vbitLogo from "./assets/vbit_logo.png";
+import aicteLogo from "./assets/aicte_logo.png";
+
 import {
     SiPython,
     SiJavascript,
@@ -277,7 +282,7 @@ export default function App() {
         {
             name: "DATABASE MANAGEMENT SYSTEMS",
             issuer: "NPTEL",
-            logo: "/nptel_logo.png",
+            logo: nptelLogo,
             link: "https://github.com/Akhilan9/Certificates/blob/main/Data%20Base%20Management%20System.pdf",
             desc: "Comprehensive certification covering relational databases, SQL optimization, and advanced database management principles through the NPTEL platform."
         },
@@ -291,7 +296,7 @@ export default function App() {
         {
             name: "KERAS AND TENSORFLOW",
             issuer: "Scaler",
-            logo: "/scaler_logo.png",
+            logo: scalerLogo,
             link: "https://www.linkedin.com/posts/akhilanvengala_deeplearning-tensorflow-keras-activity-7431325268218363904-dSMh",
             desc: "Advanced training in building and deploying deep learning models using Keras and TensorFlow frameworks for real-world AI applications."
         },
@@ -319,7 +324,7 @@ export default function App() {
         {
             name: "CYBERSECURITY HACKATHON",
             issuer: "VBIT",
-            logo: "/vbit_logo.png",
+            logo: vbitLogo,
             link: "https://www.linkedin.com/posts/akhilanvengala_cybersecurity-hackathonwinner-1stprize-activity-7431326376869294080-dwxe",
             desc: "Participated in intensive cybersecurity challenges involving network forensics and vulnerability exploitation at the VBIT hackathon."
         },
@@ -333,7 +338,7 @@ export default function App() {
         {
             name: "PYTHON FULL STACK DEVELOPER",
             issuer: "AICTE - EduSkills",
-            logo: "/aicte_logo.png",
+            logo: aicteLogo,
             link: "https://www.linkedin.com/posts/akhilanvengala_python-fullstackdevelopment-webdevelopment-activity-7428674092834222081-XXm0",
             desc: "Completed a virtual internship in Python Full Stack development, building scalable web applications with modern backend architectures."
         }
@@ -394,14 +399,7 @@ export default function App() {
                     <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
                         <h1
                             onClick={() => window.location.reload()}
-                            className="
-  text-5xl
-  font-black
-  uppercase
-  tracking-tight
-  hover-target
-  cursor-pointer
-  "
+                            className="text-3xl sm:text-5xl font-black uppercase tracking-tight hover-target cursor-pointer"
                         >
                             AKHILAN
                         </h1>
@@ -410,7 +408,7 @@ export default function App() {
                             Engineering Intelligent Systems For The Future.
                         </p>
 
-                        <div className="flex gap-10 text-sm font-semibold uppercase tracking-widest">
+                        <div className="hidden md:flex gap-10 text-sm font-semibold uppercase tracking-widest">
                             <a 
                                 href="#projects" 
                                 onClick={(e) => scrollToSection(e, "#projects")}
@@ -457,9 +455,9 @@ export default function App() {
                             variants={containerVariants}
                             initial="hidden"
                             animate="visible"
-                            className="flex-1"
+                            className="flex-1 text-center lg:text-left"
                         >
-                            <h1 className="text-6xl md:text-8xl lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase text-black whitespace-nowrap">
+                            <h1 className="text-[15vw] lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase text-black">
                                 {"AKHILAN".split("").map((letter, i) => (
                                     <motion.span 
                                         key={i} 
@@ -472,7 +470,7 @@ export default function App() {
                             </h1>
                             <motion.p 
                                 variants={itemVariants}
-                                className="mt-8 text-2xl font-medium text-black/60 max-w-[500px]"
+                                className="mt-8 text-xl md:text-2xl font-medium text-black/60 max-w-[500px] mx-auto lg:mx-0"
                             >
                                 Engineering Intelligent Systems For The Future.
                             </motion.p>
@@ -534,12 +532,12 @@ export default function App() {
                                 creating impactful digital experiences.
                             </p>
 
-                            <div className="flex flex-wrap gap-6">
+                            <div className="flex flex-col md:flex-row flex-wrap gap-6">
                                 <a
                                     href="/resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover-target bg-black text-white px-12 py-6 rounded-full font-bold text-xl hover:scale-105 transition duration-300"
+                                    className="hover-target bg-black text-white px-12 py-6 rounded-full font-bold text-xl hover:scale-105 transition duration-300 text-center"
                                 >
                                     Resume
                                 </a>
@@ -548,7 +546,7 @@ export default function App() {
                                     href="https://github.com/akhilan9"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover-target border-2 border-black px-12 py-6 rounded-full font-bold text-xl hover:bg-black hover:text-white hover:scale-105 transition duration-300"
+                                    className="hover-target border-2 border-black px-12 py-6 rounded-full font-bold text-xl hover:bg-black hover:text-white hover:scale-105 transition duration-300 text-center"
                                 >
                                     GitHub
                                 </a>
@@ -557,7 +555,7 @@ export default function App() {
                                     href="https://www.linkedin.com/in/akhilanvengala"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover-target border-2 border-black px-12 py-6 rounded-full font-bold text-xl hover:bg-black hover:text-white hover:scale-105 transition duration-300"
+                                    className="hover-target border-2 border-black px-12 py-6 rounded-full font-bold text-xl hover:bg-black hover:text-white hover:scale-105 transition duration-300 text-center"
                                 >
                                     LinkedIn
                                 </a>
@@ -590,7 +588,7 @@ export default function App() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-100px" }}
-                            className="grid md:grid-cols-2 gap-10"
+                            className="grid grid-cols-1 md:grid-cols-2 gap-10"
                         >
                             {projects.map((project, index) => (
                                 <motion.div 
@@ -740,12 +738,12 @@ export default function App() {
                         <FaAward size={64} className="text-black" />
                         <h2 className="text-6xl font-black uppercase tracking-tight">Certificates</h2>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         {certificates.map((cert, index) => (
                             <motion.div 
                                 key={index}
                                 whileHover={{ y: -10 }}
-                                className="p-12 bg-white rounded-[40px] border border-black/5 flex flex-col items-start text-left hover:shadow-2xl transition-all duration-500 group"
+                                className="p-8 md:p-12 bg-white rounded-[40px] border border-black/5 flex flex-col items-start text-left hover:shadow-2xl transition-all duration-500 group"
                             >
                                 <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mb-10 p-4 border border-black/5 group-hover:scale-110 transition-transform duration-500">
                                     <img src={cert.logo} alt={cert.issuer} className="max-w-full max-h-full object-contain" />
@@ -774,11 +772,11 @@ export default function App() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="py-32 px-8 max-w-7xl mx-auto border-t border-black/10"
+                    className="py-20 md:py-32 px-8 max-w-7xl mx-auto border-t border-black/10"
                 >
                     <div className="flex items-center gap-6 mb-24">
-                        <FaLaptopCode size={64} className="text-black" />
-                        <h2 id="outreach" className="text-6xl font-black uppercase tracking-tight scroll-mt-32">Impact & Outreach</h2>
+                        <FaLaptopCode size={48} className="text-black md:w-16 md:h-16" />
+                        <h2 id="outreach" className="text-4xl md:text-6xl font-black uppercase tracking-tight scroll-mt-32">Impact & Outreach</h2>
                     </div>
 
                     <div className="space-y-40">
@@ -831,7 +829,7 @@ export default function App() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-5xl font-black uppercase mb-20 tracking-tight scroll-mt-32 text-white"
+                            className="text-4xl md:text-5xl font-black uppercase mb-20 tracking-tight scroll-mt-32 text-white"
                         >
                             Tech Stack
                         </motion.h2>
@@ -866,18 +864,18 @@ export default function App() {
                     </motion.section>
                 </div>
 
-                <motion.section
+                <motion.section 
                     variants={sectionVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    className="py-16 px-8 max-w-7xl mx-auto border-t border-black/10 mt-10"
+                    className="py-20 md:py-32 px-8 max-w-7xl mx-auto"
                 >
-                    <div className="flex flex-col lg:flex-row gap-20">
+                    <div className="flex flex-col lg:flex-row gap-20 lg:gap-32">
                         {/* LEFT: INFO */}
-                        <div className="lg:w-1/3 space-y-16">
-                            <div>
-                                <h2 id="contact" className="text-6xl font-black uppercase tracking-tight mb-20 scroll-mt-32">Get In Touch</h2>
+                        <div className="lg:w-1/3">
+                            <div className="sticky top-40 space-y-12">
+                                <h2 id="contact" className="text-4xl md:text-6xl font-black uppercase tracking-tighter scroll-mt-40">Let's <br /> Connect</h2>
                                 <div className="space-y-12">
                                     <div className="flex items-start gap-6">
                                         <div className="mt-1 text-2xl opacity-40"><FaMapMarkerAlt /></div>
@@ -1014,7 +1012,7 @@ export default function App() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             href="mailto:akhilanvengala9@gmail.com"
-                            className="text-[100px] md:text-[180px] lg:text-[240px] font-black uppercase tracking-tighter leading-none hover:scale-105 transition-transform duration-700 hover-target inline-block text-white"
+                            className="text-[18vw] lg:text-[240px] font-black uppercase tracking-tighter leading-none hover:scale-105 transition-transform duration-700 hover-target inline-block text-white"
                         >
                             HIRE ME!
                         </motion.a>
