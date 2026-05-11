@@ -394,7 +394,7 @@ export default function App() {
                 </svg>
             </div>
 
-            <main className="bg-[#e8e6df] text-black min-h-screen">
+            <main className="bg-[#e8e6df] text-black min-h-screen overflow-x-hidden">
                 {/* NAVBAR */}
                 <nav className="fixed top-0 left-0 w-full z-50 bg-[#e8e6df]/90 backdrop-blur-md border-b border-black/10">
                     <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
@@ -450,7 +450,7 @@ export default function App() {
                 </nav>
 
                 {/* HERO TOP: NAME & PHOTO */}
-                <section className="pt-32 pb-16 px-8 max-w-7xl mx-auto min-h-[90vh] flex items-center">
+                <section className="pt-24 lg:pt-32 pb-16 px-6 sm:px-8 max-w-7xl mx-auto min-h-[80vh] flex items-center">
                     <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-20">
                         <motion.div 
                             variants={containerVariants}
