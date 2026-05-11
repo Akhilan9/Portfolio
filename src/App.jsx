@@ -826,7 +826,7 @@ export default function App() {
                         className="px-8 max-w-7xl mx-auto"
                     >
                         <div className="flex items-center gap-6 mb-20">
-                            <FaTerminal size={48} className="text-white md:w-16 md:h-16" />
+                            <FaMicrochip size={48} className="text-white md:w-16 md:h-16" />
                             <motion.h2
                                 id="skills"
                                 initial={{ opacity: 0, y: 30 }}
